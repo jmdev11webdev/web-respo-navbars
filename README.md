@@ -40,29 +40,36 @@ web-respo-navbars/ ← Repository root
 
 ## 💻 Getting Started
 
-1. **Clone the repository:**
+### 1. Clone the repository
 
 ```bash
 git clone git@github.com:jmdev11webdev/web-responsive-navbars.git
 cd web-responsive-navbars
+```
 
-code . or open in windows visual studio code using the WSL extension and use; "Ctrl + Shift + P", ">WSL: Open Folder".
+### 2. Open in VS Code with WSL2
 
-Start developing your navbar:
+Open VS Code and use the WSL extension
 
-Add new navbar folders like respo-navbar-3/
+Shortcut: Ctrl + Shift + P → >WSL: Open Folder → select the cloned repo
 
-Add HTML, CSS, and JS files inside each folder
+### 3. Start developing your navbar
 
-Test responsiveness in the browser
+Add a new folder for each navbar, e.g., respo-navbar-3/
 
-Track changes with Git:
+Add your HTML, CSS, and JS files inside the new folder
 
+Test the responsiveness in your browser
+
+### 4. Track changes with Git
+
+```bash
 git add .
 git commit -m "Add new navbar"
-git push
+git push -u origin main
+```
 
-🌟 Future Plans
+### 🌟 Future Plans
 
 Add more advanced navbars with animations and dropdowns
 
@@ -72,13 +79,15 @@ Implement accessibility features for better UX
 
 Maintain version history and changelog for learning purposes
 
-📌 Notes
+### 📌 Notes
 
 Always develop inside WSL2 Ubuntu for better performance
 
 Keep each navbar in a separate folder for organization
 
 Use Git for tracking all changes and collaborating
+
+### 💬 Contributions
 
 Contributions are welcome! Feel free to:
 
@@ -87,3 +96,13 @@ Add new navbar designs
 Improve responsiveness and accessibility
 
 Suggest enhancements or report issues
+
+
+---
+
+✅ **What changed:**  
+
+- Commands like `git clone` and `git add` are inside **code blocks** only.  
+- Instructions and explanations are **plain text lists**.  
+- Future plans, notes, and contributions have proper headings and bullet points.  
+
