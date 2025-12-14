@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document | Respo Navbar 1</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- google font (Ubuntu)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#"><b>MyLogo</b> <br>
+                <small>Full Stack Developer</small>
+                </a>
+            </div>
+
+            <!-- navbar menu links for desktop -->
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#">Home</a></li>
+                <li class="navbar-item"><a href="#">About</a></li>
+                <li class="navbar-item"><a href="#">Services</a></li>
+                <li class="navbar-item"><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- navbar menu bar toggle -->
+            <div class="navbar-toggle">
+                <button id="navbar-toggle-btn" onclick="sidebar_open()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar menu -->
+    <div class="sidebar" id="sidebar">
+        <!-- sidebar menu links for mobile -->
+        <ul class="sidebar_menu" id="sidebar_menu">
+            <button onclick="sidebar_close()"> &times;</button>
+            <li class="sidebar_item"><a href="#">Home</a></li>
+            <li class="sidebar_item"><a href="#">About</a></li>
+            <li class="sidebar_item"><a href="#">Services</a></li>
+            <li class="sidebar_item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- script source -->
+    <script src="main.js"></script>
+</body>
+</html>

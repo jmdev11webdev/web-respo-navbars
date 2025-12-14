@@ -1,0 +1,134 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navbar styles */
+nav {
+    padding: 2rem 3rem;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar container styles */
+nav .navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navbar logo styles */
+nav .navbar-logo {
+    font-size: 18px;
+}
+
+/* Navbar logo link styles */
+nav .navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Navbar menu styles */
+nav .navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav .navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .navbar-menu li a:hover {
+    color: #ff6347;
+}
+
+/* Hiding the toggle button for larger screens (as this is for mobile) */
+nav .navbar-toggle {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    /* Adjusting navbar container for mobile */
+    nav .navbar-container {
+        justify-content: space-between;
+    }
+
+    /* Hiding the menu by default on mobile */
+    nav .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Displaying the toggle button on mobile */
+    nav .navbar-toggle {
+        display: block;
+    }
+
+    nav .navbar-toggle button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    nav .navbar-toggle span {
+        color: #fff;
+    }
+
+    /* Showing the menu when active */
+    nav .navbar-menu.active {
+        display: flex;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s ease-in-out;
+        padding-top: 60px;
+        z-index: 1000;
+    }
+
+    .sidebar button {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 36px;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin-right: 25px;
+        line-height: 1.5;
+    }
+
+}
