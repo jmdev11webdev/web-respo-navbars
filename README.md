@@ -100,6 +100,17 @@ Suggest enhancements or report issues
 
 ---
 
+## 📷 Preview
+
+Desktop Navbar
+<img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/43b8a402-3d61-4846-be1e-4b1afb39c1de" />
+
+Mobile Navbar
+<img width="280" height="499" alt="image" src="https://github.com/user-attachments/assets/1cee5ac4-46d2-43e5-8899-e77f894727c3" />
+<img width="281" height="502" alt="image" src="https://github.com/user-attachments/assets/c326ac10-e2e6-47bb-97ae-56eafe5dfd1d" />
+
+---
+
 ✅ **What changed:**  
 
 - Commands like `git clone` and `git add` are inside **code blocks** only.  
